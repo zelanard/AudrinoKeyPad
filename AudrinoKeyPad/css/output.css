@@ -1,0 +1,177 @@
+:root {
+    /*colours*/
+    --accentColor: #5C4033;
+    --hoverColor: lightgray;
+    --backgroundColor: white;
+    --textColor: black;
+    --invertedTextColor: white;
+    --menuColour: rgb(131, 131, 131);
+
+    /*numbers*/
+    --buttonHeight: 35px;
+    --buttonWidth: 180;
+    --menuFontSize: 16;
+    --screenSwidth: 100%;
+}
+
+html {
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+}
+
+#body {
+    width: var(--screenSwidth);
+    height: 85vh;
+    text-align: center;
+    background-color: var(--backgroundColor);
+    padding: 16px;
+    border-top: 5px solid var(--hoverColor);
+    border-bottom: 5px solid var(--hoverColor);
+    overflow:auto;
+    overflow-y: visible;
+}
+
+#body div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: left;
+}
+
+#body div .panel {
+    display: none;
+}
+
+#menu,
+body {
+    background-color: var(--accentColor);
+    margin: 0px;
+}
+
+#menu {
+    display: flex;
+    width: var(--screenSwidth);
+    overflow: none;
+    margin-left: 35px;
+}
+
+#menu h1 {
+    position: absolute;
+    top: 0px;
+    width: var(--screenSwidth);
+    color: var(--invertedTextColor);
+    text-align: center;
+    z-index: 1;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    z-index: 1000;
+    margin-bottom: 0px;
+}
+
+#menu ul li {
+    width: var(--buttonWidth);
+    height: var(--buttonHeight);
+    text-align: center;
+    line-height: var(--buttonHeight);
+    position: relative;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: var(--textColor);
+    display: block;
+}
+
+#menu ul ul {
+    position: absolute;
+    display: none;
+}
+
+#dropBody {
+    background-color: var(--menuColour);
+    border-left: 3px solid var(--hoverColor);
+    border-top: 3px solid var(--hoverColor);
+    color: var(--invertedTextColor);
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--menuFontSize);
+    width: var(--buttonWidth);
+    height: var(--buttonHeight);
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#dropBody:Hover,
+#dropHead:Hover {
+    background-color: var(--hoverColor);
+    color: var(--textColor);
+}
+
+#dropHead {
+    background-color: var(--menuColour);
+    border: none;
+    border-left: 3px solid var(--hoverColor) !important;
+    border-top: 3px solid var(--hoverColor);
+    color: var(--textColor);
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--menuFontSize);
+    width: var(--buttonWidth);
+    height: var(--buttonHeight);
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#pool {
+    background-color: var(--menuColour);
+    border: none;
+    color: var(--textColor);
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 26;
+    width: var(--buttonHeight) !important;
+    height: var(--buttonHeight) !important;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 3px solid var(--hoverColor);
+    border-radius: 25px 25px 0px 0px;
+    margin-left: 8px;
+    margin-bottom: -2.5px;
+}
+
+#menu ul li:hover>ul {
+    display: Block;
+    margin-left: var(--buttonWidth);
+    top: -2.5px;
+    border-radius: 25px 0px 0px 25px;
+}
+
+#menu #pool:hover>ul {
+    display: block;
+    left: -183px;
+    top: 35;
+}
+
+#pool:hover {
+    background-color: var(--hoverColor);
+}
+
+h4 {
+    margin-bottom: 0px;
+}

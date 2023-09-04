@@ -1,0 +1,52 @@
+:root {
+    --even: black;
+    --uneven: beige;
+    --black: teal;
+    --white: gold;
+    --selectWhite: red;
+    --selectBlack: navy;
+}
+table{
+    table-layout: fixed;
+    border:7px double black;
+}
+th{
+    background-color: var(--even);
+    color: var(--uneven);
+    text-align: center;
+    width: 25px;
+    height: 25px;
+}
+
+.even{
+    background-color: var(--even);
+    text-align: center;
+    width: 25px;
+    height: 25px;    
+}
+.uneven{
+    background-color: var(--uneven);
+    text-align: center;
+    width: 25px;
+    height: 25px;
+}
+
+.black{
+    color:var(--black);
+    font-size: large;
+    cursor: pointer;
+}
+
+.white{
+    color:var(--white);
+    font-size: large;
+    cursor: pointer;
+}
+
+.white:hover{
+    background-color: var(--selectWhite);
+}
+
+.black:hover{
+    background-color: var(--selectBlack);
+}

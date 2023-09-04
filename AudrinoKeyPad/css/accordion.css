@@ -1,0 +1,30 @@
+.accordion {
+    background-color: var(--menuColour);
+    color: var(--textColour);
+    border: 3px solid var(--hoverColor);
+    cursor: pointer;
+    width: 70px;
+    min-height: 90px;
+    min-width: 70px;
+    max-height: 90px;
+    max-width: 70px;
+    padding-top: 15px;
+    border-radius: 50px 50px 0px 0px;
+    text-align: center;
+    font-size: var(--menuFontSize);
+    transition: 0.6s;
+    margin-left: 35px;
+    margin-bottom: 15px;
+}
+
+.active{
+    background-color: var(--hoverColor);
+    border-color: var(--menuColour);
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
