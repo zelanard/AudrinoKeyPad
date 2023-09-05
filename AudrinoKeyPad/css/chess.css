@@ -21,14 +21,10 @@ th{
 .even{
     background-color: var(--even);
     text-align: center;
-    width: 25px;
-    height: 25px;    
 }
 .uneven{
     background-color: var(--uneven);
     text-align: center;
-    width: 25px;
-    height: 25px;
 }
 
 .black{

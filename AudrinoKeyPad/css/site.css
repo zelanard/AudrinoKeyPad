@@ -1,0 +1,42 @@
+body {
+    background-color: var(--accentColor);
+    margin: 0px;
+}
+#body {
+    width: var(--screenSwidth);
+    height: 80vh;
+    text-align: center;
+    background-color: var(--backgroundColor);
+    padding: 16px;
+    border-top: 5px solid var(--hoverColor);
+    border-bottom: 5px solid var(--hoverColor);
+    overflow:auto;
+    overflow-y: visible;
+}
+
+#body div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: left;
+    align-items: center;
+}
+
+#menu,
+
+
+h4 {
+    margin-bottom: 0px;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.flex-col{
+    display:flex !important;
+    flex-direction: column !important;
+}
+.flex-col div{
+    margin-bottom: 10px !important;
+}

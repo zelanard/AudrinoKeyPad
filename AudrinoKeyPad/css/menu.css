@@ -1,61 +1,11 @@
-:root {
-    /*colours*/
-    --accentColor: #5C4033;
-    --hoverColor: lightgray;
-    --backgroundColor: white;
-    --textColor: black;
-    --invertedTextColor: white;
-    --menuColour: rgb(131, 131, 131);
-
-    /*numbers*/
-    --buttonHeight: 35px;
-    --buttonWidth: 180;
-    --menuFontSize: 16;
-    --screenSwidth: 100%;
-}
-
-html {
-    overflow: hidden;
-}
-
 ul {
     padding: 0;
-}
-
-#body {
-    width: var(--screenSwidth);
-    height: 85vh;
-    text-align: center;
-    background-color: var(--backgroundColor);
-    padding: 16px;
-    border-top: 5px solid var(--hoverColor);
-    border-bottom: 5px solid var(--hoverColor);
-    overflow:auto;
-    overflow-y: visible;
-}
-
-#body div {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    text-align: left;
-}
-
-#body div .panel {
-    display: none;
-}
-
-#menu,
-body {
-    background-color: var(--accentColor);
-    margin: 0px;
 }
 
 #menu {
     display: flex;
     width: var(--screenSwidth);
     overflow: none;
-    margin-left: 35px;
 }
 
 #menu h1 {
@@ -72,6 +22,7 @@ body {
     list-style: none;
     z-index: 1000;
     margin-bottom: 0px;
+    margin-left: 35px;
 }
 
 #menu ul li {
@@ -170,8 +121,4 @@ body {
 
 #pool:hover {
     background-color: var(--hoverColor);
-}
-
-h4 {
-    margin-bottom: 0px;
 }
