@@ -1,0 +1,51 @@
+.arduino_output {
+    justify-content: center !important;
+    align-items: center !important;
+    
+    border: none;
+    max-width: 205px;
+    width: 205px;
+    min-height: 150px;
+    border-radius: 7px;
+    padding:15px;
+    margin: 7px;
+    background-color: var(--backgroundColour);
+    -webkit-box-shadow: inset 0 0 15px 1px var(--accentColour);
+    box-shadow: inset 0 0 25px 1px var(--accentColour);
+}
+.arduino_output_border a {
+    max-width: 245px;
+    text-decoration: none;
+}
+
+#arduino_container{
+    flex-wrap: wrap;
+    max-width: var(--screenSwidth);
+    align-items: center !important;
+}
+
+.arduino_output_wide {
+    border: none;
+    min-height: 150px;
+    border-radius: 7px;
+    padding:30px;
+    margin: 7px;
+    background-color: var(--backgroundColour);
+    text-align: center !important;
+    -webkit-box-shadow: inset 0 0 15px 1px var(--accentColour);
+    box-shadow: inset 0 0 25px 1px var(--accentColour);
+    max-height: 600px;
+    width:700px;
+    overflow:auto;
+}
+
+.arduino_output_wide li{
+    list-style: none;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+#arduino_container{
+    flex-wrap:wrap;
+    max-width: var(--screenSwidth);
+}

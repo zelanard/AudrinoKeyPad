@@ -1,11 +1,19 @@
 :root {
     /*colours*/
-    --accentColor: #5C4033;
-    --backgroundColor: white;
-    --hoverColor: lightgray;
-    --menuColour: rgb(131, 131, 131);
-    --textColor: black;
-    --invertedTextColor: white;
+    --accentColour: #0062e3;/*#5C4033;*/
+    --backgroundColour: white;
+    --hoverColour: lightgray;
+    --menuColour: #00BFFF; /*rgb(131, 131, 131);*/
+    --textColour: black;
+    --invertedTextColour: white;
+
+    /*chess*/
+    --even: black;
+    --uneven: beige;
+    --black: teal;
+    --white: gold;
+    --selectWhite: red;
+    --selectBlack: navy;
 
     /*numbers*/
     --buttonHeight: 35px;

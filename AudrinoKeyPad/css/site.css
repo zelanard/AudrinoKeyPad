@@ -1,15 +1,24 @@
 body {
-    background-color: var(--accentColor);
+    background-color: var(--accentColour);
     margin: 0px;
 }
+
+disclaimer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    align-items: baseline;
+}
+
 #body {
     width: var(--screenSwidth);
     height: 80vh;
     text-align: center;
-    background-color: var(--backgroundColor);
+    background-color: var(--backgroundColour);
     padding: 16px;
-    border-top: 5px solid var(--hoverColor);
-    border-bottom: 5px solid var(--hoverColor);
+    border-top: 5px solid var(--hoverColour);
+    border-bottom: 5px solid var(--hoverColour);
     overflow:auto;
     overflow-y: visible;
 }
@@ -17,13 +26,14 @@ body {
 #body div {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     text-align: left;
-    align-items: center;
+    align-items: baseline;
 }
 
-#menu,
-
+#time, #last_login{
+    text-align: center !important;
+}
 
 h4 {
     margin-bottom: 0px;

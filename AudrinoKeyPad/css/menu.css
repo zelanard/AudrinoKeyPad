@@ -12,7 +12,7 @@ ul {
     position: absolute;
     top: 0px;
     width: var(--screenSwidth);
-    color: var(--invertedTextColor);
+    color: var(--invertedTextColour);
     text-align: center;
     z-index: 1;
 }
@@ -35,7 +35,7 @@ ul {
 
 #menu ul li a {
     text-decoration: none;
-    color: var(--textColor);
+    color: var(--invertedTextColour);
     display: block;
 }
 
@@ -46,9 +46,9 @@ ul {
 
 #dropBody {
     background-color: var(--menuColour);
-    border-left: 3px solid var(--hoverColor);
-    border-top: 3px solid var(--hoverColor);
-    color: var(--invertedTextColor);
+    border-left: 3px solid var(--hoverColour);
+    border-top: 3px solid var(--hoverColour);
+    color: var(--invertedTextColour);
     font-family: 'Catamaran', sans-serif;
     text-align: center;
     text-decoration: none;
@@ -64,16 +64,16 @@ ul {
 
 #dropBody:Hover,
 #dropHead:Hover {
-    background-color: var(--hoverColor);
-    color: var(--textColor);
+    background-color: var(--hoverColour);
+    color: var(--textColour);    
 }
 
 #dropHead {
     background-color: var(--menuColour);
     border: none;
     border-left: 3px solid var(--hoverColor) !important;
-    border-top: 3px solid var(--hoverColor);
-    color: var(--textColor);
+    border-top: 3px solid var(--hoverColour);
+    color: var(--invertedTextColour);
     font-family: 'Catamaran', sans-serif;
     text-align: center;
     text-decoration: none;
@@ -90,7 +90,7 @@ ul {
 #pool {
     background-color: var(--menuColour);
     border: none;
-    color: var(--textColor);
+    color: var(--invertedTextColour);
     font-family: 'Catamaran', sans-serif;
     text-align: center;
     text-decoration: none;
@@ -100,7 +100,7 @@ ul {
     height: var(--buttonHeight) !important;
     cursor: pointer;
     border-radius: 100px;
-    border: 3px solid var(--hoverColor);
+    border: 3px solid var(--hoverColour);
     border-radius: 25px 25px 0px 0px;
     margin-left: 8px;
     margin-bottom: -2.5px;
@@ -111,14 +111,23 @@ ul {
     margin-left: var(--buttonWidth);
     top: -2.5px;
     border-radius: 25px 0px 0px 25px;
+    color: var(--textColour);    
 }
 
 #menu #pool:hover>ul {
     display: block;
     left: -183px;
     top: 35;
+    color: var(--textColour);    
 }
 
 #pool:hover {
-    background-color: var(--hoverColor);
+    background-color: var(--hoverColour);
+    border-color: var(--menuColour) !important;
+    color: var(--textColour);
+}
+
+#menu ul li a:hover,
+#menu ul li:hover > a{
+    color: var(--textColour);
 }

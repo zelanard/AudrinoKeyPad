@@ -1,7 +1,7 @@
 .accordion {
     background-color: var(--menuColour);
-    color: var(--textColour);
-    border: 3px solid var(--hoverColor);
+    color: var(--invertedTextColour);
+    border: 3px solid var(--hoverColour);
     cursor: pointer;
     width: 70px;
     min-height: 90px;
@@ -12,19 +12,20 @@
     border-radius: 50px 50px 0px 0px;
     text-align: center;
     font-size: var(--menuFontSize);
-    transition: 0.6s;
+    transition: 0.2s;
     margin-left: 35px;
     margin-bottom: 15px;
 }
 
 .active{
-    background-color: var(--hoverColor);
+    background-color: var(--hoverColour);
     border-color: var(--menuColour);
+    color: var(--textColour);
 }
 
 .panel {
     padding: 0 18px;
     display: none;
-    background-color: white;
+    background-color: var(--backgroundColour);
     overflow: hidden;
 }

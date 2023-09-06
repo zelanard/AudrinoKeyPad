@@ -1,14 +1,6 @@
-:root {
-    --even: black;
-    --uneven: beige;
-    --black: teal;
-    --white: gold;
-    --selectWhite: red;
-    --selectBlack: navy;
-}
 table{
     table-layout: fixed;
-    border:7px double black;
+    border:7px double var(--even);
 }
 th{
     background-color: var(--even);

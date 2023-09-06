@@ -38,21 +38,25 @@ namespace AudrinoKeyPad
 
                 switch (requestUrl)
                 {
-                    case string html when html.EndsWith(@"D:\Skole\Source\Opgaver\AudrinoKeyPad\AudrinoKeyPad/"):
+                    case string str when str.EndsWith(@"D:\Skole\Source\Opgaver\AudrinoKeyPad\AudrinoKeyPad/"):
                         // If the request is for the root path, serve "index.html"
                         ServeFile(response, @"D:\Skole\Source\Opgaver\AudrinoKeyPad\AudrinoKeyPad\index.html", "html");
                         break;
-                    case string html when html.EndsWith(".html"):
+                    case string str when str.EndsWith(".html"):
                         // Serve other HTML files
                         ServeFile(response, requestUrl, "html");
                         break;
-                    case string html when html.EndsWith(".css"):
+                    case string str when str.EndsWith(".css"):
                         // Serve CSS files
                         ServeFile(response, requestUrl, "css");
                         break;
-                    case string html when html.EndsWith(".js"):
+                    case string str when str.EndsWith(".js"):
                         // Serve JavaScrit files
                         ServeFile(response, requestUrl, "js");
+                        break;
+                    case string str when str.EndsWith(".json"):
+                        // Serve JavaScrit files
+                        ServeFile(response, requestUrl, "json");
                         break;
                     default:
                         // Handle 404 Not Found for other file types
@@ -83,6 +87,9 @@ namespace AudrinoKeyPad
                     break;
                 case "js":
                     response.ContentType = "application/javascript; charset=utf-8";
+                    break;
+                case "json":
+                    response.ContentType = "text/json; charset=utf-8";
                     break;
             }
 
@@ -116,6 +123,7 @@ namespace AudrinoKeyPad
             html,
             css,
             js,
+            json,
             txt
         }
     }

@@ -28,7 +28,6 @@ void ResetPassword() {
     for (int i = 0; i < 10; i++) {
         pass[i] = NULL;
     }
-    Serial.println("Password Reset");
 }
 
 void Light(int time) {
@@ -44,13 +43,14 @@ void loop() {
         ResetPassword();
     }
     else if (key) {
-        Serial.print(key);
         for (short i = 0; i < sizeof(pass); i++) {
             if (pass[i] == NULL) {
                 pass[i] = key;
                 if (pass[sizeof(pass) - 1] != NULL) {
+                    for (short j = 0; j < sizeof(pass); j++) {
+                      Serial.print(pass[j]);
+                    }
                     Serial.println();
-                    Serial.println(pass);
                     ResetPassword();
                     Light(500);
                 }
